@@ -5,15 +5,15 @@ import {Explanation} from "./Styles";
 import {ExplanationH3} from "./Styles";
 import {ExplanationP} from "./Styles";
 import {NasaCardTitle} from "./Styles";
+import {Date} from "./Styles";
 
 const NasaCard = props => {
     return(
         <NasaCardContent>
             <div className="top_content">
                 <h1>Astronomy Picture of the Day</h1>
-                <p>Select a new date: <input type='date' id='photoDate' min='1995-06-16' max='2019-12-11'></input>
-                <p>Date: {props.date}</p>
-                </p>
+                <p>Select a new date: <input type='date' id='photoDate' min='1995-06-16' max='2019-12-11'></input></p>
+                <Date>Date: {props.date}</Date>
                 <NasaCardTitle>Title: {props.title}</NasaCardTitle>
             </div>
         <div> 

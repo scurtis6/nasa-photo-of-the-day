@@ -6,6 +6,9 @@ export const NasaCardContent = styled.div`
     max-width: 911.2px;
     margin-top: 2rem;
 `;
+export const Date = styled.p`
+    font-size: 1.6rem;
+`;
 export const NasaCardTitle = styled.h2`
     background-color: black;
     color: hotpink;
