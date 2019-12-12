@@ -6,6 +6,15 @@ export const NasaCardContent = styled.div`
     max-width: 911.2px;
     margin-top: 2rem;
 `;
+export const Header = styled.h1`
+    background-color: black;
+    color: pink;
+    text-decoration: underline;
+    padding: 1.5rem 0;
+`;
+export const SelectP = styled.p`
+    font-size: 1.2rem;
+`;
 export const Date = styled.p`
     font-size: 1.6rem;
 `;
