@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const NasaCardContent = styled.div`
     // text-align: center;
     max-width: 911.2px;
-    margin-top: 2rem;
+    margin: 2rem auto;
 `;
 export const Header = styled.h1`
     background-color: black;
@@ -13,7 +13,8 @@ export const Header = styled.h1`
     padding: 1.5rem 0;
 `;
 export const SelectP = styled.p`
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
 `;
 export const Date = styled.p`
     font-size: 1.6rem;
