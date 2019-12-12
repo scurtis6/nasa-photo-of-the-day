@@ -4,10 +4,10 @@ import NasaCard from "./NasaCard";
 
 export default function NasaCardLink(){
     const [cardData, setCardData] = useState([]);
-    // const [cards, setCards] = useState([]);
+    const [changeDate, setChangeDate] = useState('2019-12-12')
 
     useEffect(() =>{
-        axios.get(`https://api.nasa.gov/planetary/apod?api_key=WnSt7VaeYGB0Lbqegg2jxgDoN3p9eNbDCPAc714l`)
+        axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${changeDate}`)
         .then(response => {
             console.log(response.data);
             setCardData(response.data);
@@ -15,7 +15,7 @@ export default function NasaCardLink(){
         .catch(err => {
             console.log('the data was not returned', err);
         });
-    }, []);
+    }, [changeDate]);
 
     return(
         <div>
